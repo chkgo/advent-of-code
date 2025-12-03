@@ -48,9 +48,9 @@ foreach (preg_split('/[,\s]+/', $src_str) as $chunk)
                 {
                     $is_fake = true;
                     $res1 += (int)(strlen($id_part) == $id_len / 2) * $id;
+                    $res2 += $id;
                 }
             }
-            $res2 += (int)$is_fake * $id;
         }
     }
 }
