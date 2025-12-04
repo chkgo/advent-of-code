@@ -55,9 +55,9 @@ do
                 $len = $col ? 3 : 2;
                 // - count rolls around the current position
                 $rolls_around =
-                    ($prev_str ? rollsWithin(substr($prev_str, $pos, $len)) : 0) +
+                    rollsWithin(substr($prev_str, $pos, $len)) +
                     rollsWithin(substr($cur_str, $pos, $len)) +
-                    ($next_str ? rollsWithin(substr($next_str, $pos, $len)) : 0) - 1;
+                    rollsWithin(substr($next_str, $pos, $len)) - 1; // - disregard the current roll
                 if ($rolls_around < 4)
                 {
                     // - mark current roll for removal
