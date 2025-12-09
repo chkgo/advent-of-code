@@ -229,7 +229,7 @@ foreach ($tiles as $i => $t1)
 {
     foreach ($tiles as $j => $t2)
     {
-        if ($i == $j)
+        if ($i >= $j)
         {
             continue;
         }
