@@ -1,13 +1,9 @@
 <?php
 /**
+ * Advent Of Code 2025. Day 10 logic.
  *
- *
- * PHP version 7.2
- *
- * @package
- * @subpackage
+ * PHP version 8.4
  * @author     Kirill Chernyshov <chk@chkgo.com>
- * @copyright  2025 First Beat Media
  */
 
 class Day10Machine
@@ -433,7 +429,7 @@ class Day10Machine
         $max_button_press = $this->max_button_press;
         $this->prnMatrix($matrix, 'Before Dups Cleaning:');
         $this->cleanDuplicates($matrix);
-        $this->mulMatrix($matrix, 1000);
+        // $this->mulMatrix($matrix, 1000);
         $this->prnMatrix($matrix, 'After multiplication:');
 
         // - prep the gaussian stairs
